@@ -1695,7 +1695,7 @@ const IzinSakit = () => {
     e.preventDefault();
 
     try {
-      await axios.post(`${URL}/santri/${selectedSantri.id}/isagis`, {
+      await axios.post(`${URL}/santri/${selectedSantri.id}/isasi`, {
         status: sakitIzin,
         keterangan,
         sampai_tgl: sampaiTanggalJam,
