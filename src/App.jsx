@@ -1948,11 +1948,11 @@ const IzinSakit = () => {
                 >
                   <option value="">Pilih Nama</option>
                   {pilihGuruMurokib === "guru"
-                    ? dataGuru.map((item) => (
+                    ? {dataGuru&&  dataGuru.map((item) => (
                         <option key={item.id} value={item.nama}>
                           {item.nama}
                         </option>
-                      ))
+                      ))}
                     : dataMurokib.map((item) => (
                         <option key={item.id} value={item.nama}>
                           {item.nama}
